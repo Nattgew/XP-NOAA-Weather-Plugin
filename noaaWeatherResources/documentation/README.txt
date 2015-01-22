@@ -1,9 +1,9 @@
 ==========================================
-[XPGFS] Xplane Noa Global Forecast weather
+[XPGFS] Xplane Noaa Global Forecast weather
 ==========================================
 
 Downloads Forecast data from NOAA servers and sets x-plane wind and cloud layers using forecasted data for the current time and 
-world corrdinates.
+world coordinates.
 
 ============
 Requirements
@@ -32,7 +32,7 @@ The resulting installation should look like:
 RESOURCES
 =========
 
-NOOA:
+NOAA:
 -----
 GFS Products:     http://www.nco.ncep.noaa.gov/pmb/products/gfs/
 GFS Inventory:    http://www.nco.ncep.noaa.gov/pmb/products/gfs/gfs.t00z.pgrb2f06.shtml
@@ -52,5 +52,5 @@ XPlane:
 -------
 datarefs:      http://www.xsquawkbox.net/xpsdk/docs/DataRefs.html
 
-Some info on what x-plane does with metar data: 
+Some info on what X-Plane does with METAR data:
                http://code.google.com/p/fjccuniversalfmc/wiki/Winds
