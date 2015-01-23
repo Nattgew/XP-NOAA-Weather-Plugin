@@ -1,9 +1,9 @@
 # [XPGFS] X-Plane NOAA Global Forecast Weather #
 
-_Original plugin by [Joan](http://joanpc.com)_
+*Original plugin by [Joan](http://joanpc.com)*
 
-*Downloads Forecast data from NOAA servers and sets x-plane wind and cloud layers using forecasted data for the current time and
-world coordinates.*
+**Downloads forecast data from NOAA servers and sets x-plane wind and cloud layers using forecast data for the current time and
+world coordinates.**
 
 ## Requirements ##
 
@@ -13,7 +13,7 @@ world coordinates.*
 
 Wgrib2: The plugin comes with wgrib2 for common os OSX, win32 and Linux i686 glib2.5
 
-Wgrib uses cygwin on windows but the .dll is provided on the bin folder and there's no need to install-it.
+Wgrib uses cygwin on windows but the .dll is provided on the bin folder and there's no need to install it.
 
 ## Installation ##
 
@@ -31,7 +31,7 @@ The resulting installation should look like:
 
 ## PATCHES ##
 
-2015 NOAA Patch by [qwerty2k2](http://forums.x-plane.org/index.php?showuser=125293): [Original Post](http://forums.x-plane.org/index.php?showtopic=72313&p=885255), added as of commit *f4e36dc*
+2015 NOAA Patch by [qwerty2k2](http://forums.x-plane.org/index.php?showuser=125293): [Original Post](http://forums.x-plane.org/index.php?showtopic=72313&p=885255), added as of commit **f4e36dc**
 
 ## RESOURCES ##
 
@@ -49,9 +49,7 @@ The resulting installation should look like:
 
 ### OpenGrADS: ###
 
-Interactive desktop tool for easy access, manipulation, and visualization of earth science data and wgrib2 builds for diverse platforms.
-
-[Link](http://sourceforge.net/projects/opengrads/)
+Interactive desktop tool for easy access, manipulation, and visualization of earth science data and wgrib2 builds for diverse platforms. [Link](http://sourceforge.net/projects/opengrads/)
 
 ### X-Plane: ###
 
