@@ -17,11 +17,9 @@ Wgrib uses cygwin on windows but the .dll is provided on the bin folder and ther
 
 ## Installation ##
 
-Install the X-Plane Python interface:
+Install [Sandy's Python Interface](http://www.xpluginsdk.org/python_interface_latest_downloads.htm)
 
-http://www.xpluginsdk.org/python_interface_sdk100_downloads.htm
-
-Copy the zip file contents to your X-Plane/Resources/plugins/PythonScripts folder.
+Copy the zip file contents to your `X-Plane/Resources/plugins/PythonScripts` folder.
 
 The resulting installation should look like:
 
@@ -33,7 +31,7 @@ The resulting installation should look like:
 
 ## PATCHES ##
 
-2015 NOAA Patch by [qwerty2k2](http://forums.x-plane.org/index.php?showuser=125293): [Original Post](http://forums.x-plane.org/index.php?showtopic=72313&p=885255), added as of commit _N/A_
+2015 NOAA Patch by [qwerty2k2](http://forums.x-plane.org/index.php?showuser=125293): [Original Post](http://forums.x-plane.org/index.php?showtopic=72313&p=885255), added as of commit *f4e36dc*
 
 ## RESOURCES ##
 
@@ -59,4 +57,4 @@ Interactive desktop tool for easy access, manipulation, and visualization of ear
 
 [DATAREFS](http://www.xsquawkbox.net/xpsdk/docs/DataRefs.html)
 
-Some info on what X-Plane does with METAR data: [http://code.google.com/p/fjccuniversalfmc/wiki/Winds](http://code.google.com/p/fjccuniversalfmc/wiki/Winds)
+Some info on what X-Plane does with METAR data: [Winds](http://code.google.com/p/fjccuniversalfmc/wiki/Winds)
