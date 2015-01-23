@@ -2,6 +2,8 @@
 [XPGFS] Xplane Noaa Global Forecast weather
 ==========================================
 
+======== ORIGINAL README BY JOAN =========
+
 Downloads Forecast data from NOAA servers and sets x-plane wind and cloud layers using forecasted data for the current time and 
 world coordinates.
 
