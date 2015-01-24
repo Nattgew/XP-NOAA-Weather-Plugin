@@ -36,8 +36,9 @@ import os
 import sys
 import cPickle
 import multiprocessing
+import Queue
 
-from urllib import urlretrieve
+import urllib
 import subprocess
 
 #### stderr stdout ebeded python workaround ####
@@ -60,19 +61,23 @@ class AsyncDownload():
     Asyncronous download
     '''
     def __init__(self, conf, url, cachefile):
-        self.q = multiprocessing.Queue()
+        self.q = Queue.Queue()
         self.dirsep = conf.dirsep[:]
         cachepath = conf.cachepath[:]
         self.wgrib2bin = conf.wgrib2bin[:]
-        if sys.platform == 'win32':
+        '''if sys.platform == 'win32':
             multiprocessing.set_executable(os.path.join(sys.exec_prefix, 'pythonw.exe'))
         self.child = multiprocessing.Process(target=self.run, args=(url, cachepath, cachefile))
         self.child.start()
-        
+        '''
+        t = threading.Thread(target = self.run, args = (url, cachepath, cachefile))
+        t.daemon = True
+        t.start()
+
     def run(self, url, cachepath, cachefile):
         filepath = cachepath + "/" + cachefile
         tempfile = filepath + '.tmp'
-        urlretrieve(url, tempfile)
+        urllib.urlretrieve(url, tempfile)
         
         if os.path.getsize(tempfile) > 500:
             # Downloaded
@@ -88,9 +93,7 @@ class AsyncDownload():
             self.q.put(False)
 
     def die(self):
-        if self.child.is_alive():
-            self.child.terminate()
-            self.child.join(4)
+	pass
 
 # Detect x-plane plugin
 if sys.platform != 'win32' or 'plane' in sys.executable.lower():
