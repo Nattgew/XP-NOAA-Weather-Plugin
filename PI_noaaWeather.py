@@ -223,7 +223,7 @@ if sys.platform != 'win32' or 'plane' in sys.executable.lower():
             
             # Selects the apropiate wgrib binary
             platform = sys.platform
-			maxsize = sys.maxsize
+	    maxsize = sys.maxsize
             self.spinfo = False
             
             if platform == 'darwin':
@@ -238,10 +238,10 @@ if sys.platform != 'win32' or 'plane' in sys.executable.lower():
                 self.spinfo = subprocess.STARTUPINFO()
                 self.spinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
             elif platform.startswith('linux'):
-				if maxsize > 2**32:
-					wgbin = 'linux-glibx.x-x86_64-wgrib2'
-				else:
-					wgbin = 'linux-glib2.5-i686-wgrib2'
+		if maxsize > 2**32:
+			wgbin = 'wgrib2'
+		else:
+			wgbin = 'linux-glib2.5-i686-wgrib2'
             else:
                 # Linux?
                 wgbin = 'linux-glib2.5-i686-wgrib2'
